@@ -1,0 +1,64 @@
+Title: Kansas State Indigency Calculator 
+Author: Kishahnica Rajendran
+Before:<link rel="stylesheet" type="text/css" href="https://suffolklitlab.org/howto/qna/style/style.css">
+<div id="icon" style="background-size: 110px 99px;background-image: url('https://suffolklitlab.org/howto/qna/images/maxheadroom.gif');"></div>
+<h2 style="text-align:center;">Kansas Indigency Calculator</h2>
+<p><b>This is a <a href="http://www.codingthelaw.org/">class project</a>. You should not rely on it as a source of legal information. It is likely incomplete.</b></p>
+<p>Answer the following questions to see if someone qualifies for appointment of counsel.</p>
+
+Q(1): Is incarceration a punishment for the criminal charge the defendant has been charged with? 
+A: Yes
+	Q(1.1):GOTO:2
+A: No
+	Q(1.2):GOTO:11
+
+Q(2): Does the defendant live in 1 person household with an income of less than $12,490 a year? 
+A: Yes 
+	Q(2.1):GOTO:10
+A: No 
+	Q(2.2):GOTO:3
+
+Q(3): Does the defendant live in a 2 person household with a combined income of less than $16,910 a year?
+A: Yes 
+	Q(3.1):GOTO:10
+A: No 
+	Q(3.2):GOTO:4
+
+Q(4): Does the defendant live in a 3 person household with a combined income of less than $21,330 a year?  
+A: Yes 
+	Q(4.1):GOTO:10
+A: No 
+	Q(4.2):GOTO:5
+
+Q(5): Does the defendant live in a 4 person household with a combined income of less than $25,750 a year? 
+A: Yes 
+	Q(5.1):GOTO:10
+A: No 
+	Q(5.2):GOTO:6
+
+Q(6): Does the defendant live in a 5 person household with a combined income of less than $30,170 a year? 
+A: Yes 
+	Q(6.1):GOTO:10
+A: No 
+	Q(6.2):GOTO:7
+
+Q(7): Does the defendant live in a 6 person household with a combined income of less than $34,950 a year? 
+A: Yes 
+	Q(7.1):GOTO:10
+A: No 
+	Q(7.2):GOTO:8
+
+Q(8): Does the defendant live in a 7 person household with a combined income of less than $39,010 a year? 
+A: Yes 
+	Q(8.1):GOTO:10 
+A: No 
+	Q(8.2):GOTO:9
+
+Q(9): Does the defendant live in a 8 person household with a combined income of less than $43,430 a year? 
+A: Yes 
+	Q(9.1):GOTO:10
+A: No 
+	Q(9.2):GOTO:11
+
+Q(10): The state will appoint counsel 
+Q(11): The state will not appoint counsel 
